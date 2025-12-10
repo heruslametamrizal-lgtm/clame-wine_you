@@ -6,16 +6,11 @@
     <title>TikTok Giveaways - Claim Now</title>
     <style>
         /* Reset CSS dasar */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-		 
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #000000; /* Latar belakang hitam sesuai gambar */
+            background-color: #000000;
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -37,14 +32,12 @@
             display: block;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 0 20px rgba(254, 44, 85, 0.3); /* Efek glow merah TikTok */
+            box-shadow: 0 0 20px rgba(254, 44, 85, 0.3);
             transition: transform 0.3s ease;
             cursor: pointer;
         }
 
-        .image-wrapper:hover {
-            transform: scale(1.02); /* Efek zoom sedikit saat dihover */
-        }
+        .image-wrapper:hover { transform: scale(1.02); }
 
         .image-wrapper img {
             width: 100%;
@@ -57,7 +50,7 @@
             display: inline-block;
             margin-top: 30px;
             padding: 15px 50px;
-            background: linear-gradient(45deg, #FE2C55, #FF0050); /* Warna Merah TikTok */
+            background: linear-gradient(45deg, #FE2C55, #FF0050);
             color: white;
             text-decoration: none;
             font-size: 1.5rem;
@@ -76,7 +69,6 @@
             box-shadow: 0 6px 20px rgba(254, 44, 85, 0.7);
         }
 
-        /* Footer kecil (opsional) */
         .footer {
             margin-top: 40px;
             font-size: 0.8rem;
@@ -99,13 +91,7 @@
 <body>
 
     <div class="container">
-        <!-- 
-           PENTING: 
-           1. Ganti 'banner.jpg' dengan nama file gambar Anda jika berbeda.
-           2. Ganti 'https://link-tujuan-anda.com' dengan URL tujuan Anda.
-        -->
-        
-        <!-- Gambar bisa diklik -->
+        <!-- Gambar Banner -->
         <a href="https://www.effectivegatecpm.com/nwvt89n49?key=e7b3565d01367e1e084e1e633c06e49e" class="image-wrapper">
             <img src="banner.png" alt="TikTok Giveaway Event">
         </a>
@@ -119,42 +105,45 @@
             &copy; 2025 Giveaway Event. All rights reserved.
         </div>
     </div>
+
     <center>
- <!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.start', '1,4996198,4,24,200,50,00010000']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4996198&101" alt="" border="0"></a></noscript>
-<!-- Histats.com  END  --> </center>
+        <!-- Histats.com  (div with counter) -->
+        <div id="histats_counter"></div>
+        <!-- Histats.com  START  (aync)-->
+        <script type="text/javascript">
+            var _Hasync= _Hasync|| [];
+            _Hasync.push(['Histats.start', '1,4996198,4,24,200,50,00010000']);
+            _Hasync.push(['Histats.fasi', '1']);
+            _Hasync.push(['Histats.track_hits', '']);
+            (function() {
+            var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+            hs.src = ('//s10.histats.com/js15_as.js');
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+            })();
+        </script>
+        <noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4996198&101" alt="" border="0"></a></noscript>
+        <!-- Histats.com  END  --> 
+    </center>
 
    <!-- === SCRIPT AUTOLOAD DIRECT LINK  === -->
     <script>
-        // Masukkan Direct Link Anda di sini
-        const myLinks = /[
+        // PERBAIKAN: Menghapus tanda "/" sebelum "["
+        const myLinks = [
             "https://www.effectivegatecpm.com/u56m4wa1b?key=8ba4a9c1110475c946ae65df19fc4c37", 
             "https://www.effectivegatecpm.com/nwvt89n49?key=e7b3565d01367e1e084e1e633c06e49e"
         ];
  
         window.addEventListener('load', function() {
             setTimeout(function() {
-                // Loop untuk membuka semua link
+                // Loop untuk membuka link (Mungkin diblokir oleh popup blocker browser)
                 myLinks.forEach(function(link) {
-                    // Mencoba membuka di tab baru
                     window.open(link, '_blank'); 
                 });
 
-                // OPSIONAL: Jika ingin link terakhir terbuka di tab yang SAMA (Redirect)
-                // agar pasti terbuka meskipun popup blocker aktif:
-                  window.location.href = myLinks[0]; 
+                // Redirect link terakhir di tab yang sama (Pasti terbuka)
+                window.location.href = myLinks[0]; 
 
-            }, 10000); // 10000 ms = 10 Detik
+            }, 10000); // 10 Detik
         });
     </script> 
 </body>
